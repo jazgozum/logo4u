@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.logo4u.xyz/
+
+# Sitemaps
+Sitemap: https://www.logo4u.xyz/sitemap.xml

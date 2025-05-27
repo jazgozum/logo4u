@@ -34,6 +34,7 @@ function LogoDesign({onHandleInputChange , formData}) {
             width={300}
             height={200}
             className="w-full rounded-xl  cursor-pointer"
+            loading='lazy'
           />
           <p className="text-center mt-2">{design.title}</p>
         </div>
