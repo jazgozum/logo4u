@@ -18,12 +18,13 @@ function LogoTitle({ onHandleInputChange }) {
     }, [searchParam]);
 
     return (
+        <Suspense fallback={<div className='items-center flex justify-center'><Loader2Icon className='animate-spin text-primary w-10 h-10 mt-5'/></div>}>
         <div className='mt-2'>
             <HeadingDesc 
                 title={Lookup.LogoTitle}
                 desc={Lookup.LogoTitleDesc} 
             />
-            <Suspense fallback={<div className='items-center flex justify-center'><Loader2Icon className='animate-spin text-primary w-10 h-10 mt-5'/></div>}>
+            
                
             <input 
                 placeholder={Lookup.InputPlaceholder} 
@@ -34,8 +35,9 @@ function LogoTitle({ onHandleInputChange }) {
                     onHandleInputChange(e.target.value);
                 }}
             />
-            </Suspense>
+          
         </div>
+          </Suspense>
     );
 }
 
