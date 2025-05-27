@@ -6,7 +6,7 @@ import Link from 'next/link';
 function Header() {
   return (
     <div>
-    <div className='px-10 lg:px-32 xl:px-48 2xl:px-56 p-4 flex justify-between items-center shadow-sm'>
+    <div className='px-3 md:px-10 lg:px-32 xl:px-48 2xl:px-56 p-4 flex justify-between items-center shadow-sm'>
         <div className='flex items-center space-x-3'> 
             <Image src="/logo.png" alt="logo" width={130} height={30} />
         </div>

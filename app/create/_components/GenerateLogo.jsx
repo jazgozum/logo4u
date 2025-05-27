@@ -111,8 +111,8 @@ function GenerateLogo({ formData }) {
                                 )}
                                 <button
                                     className={`w-full mt-2 py-2 px-4 rounded ${logo.hasError
-                                            ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-                                            : 'bg-primary text-white hover:bg-primary cursor-pointer'
+                                        ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
+                                        : 'bg-primary text-white hover:bg-primary cursor-pointer'
                                         }`}
                                     disabled={logo.hasError}
                                 >
@@ -145,7 +145,7 @@ function GenerateLogo({ formData }) {
                     <img
                         src={selectedLogo}
                         alt="Selected Logo"
-                        className="max-w-md mx-auto rounded-lg shadow-lg"
+                        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto rounded-lg shadow-lg"
                     />
                     <div className="mt-4 space-x-2">
                         <button

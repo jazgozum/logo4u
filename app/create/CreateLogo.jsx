@@ -18,7 +18,7 @@ function CreateLogo() {
     }
     
   return (
-    <div className='mt-28 p-8 border rounded-xl 2xl:mx-72'>
+    <div className='mt-10 md:mt-15 p-8 border rounded-xl 2xl:mx-72'>
         {step == 1?
          <LogoTitle  onHandleInputChange={(v)=> onHandleInputChange ('title' , v)} formData={formData}/>:
          step == 2?
