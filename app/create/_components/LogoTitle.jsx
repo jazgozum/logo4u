@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import HeadingDesc from './HeadingDesc'
 import Lookup from '@/app/_data/Lookup'
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
+import { Loader2Icon } from 'lucide-react';
 
 function LogoTitle({ onHandleInputChange }) {
     const searchParam = useSearchParams();
@@ -21,7 +23,8 @@ function LogoTitle({ onHandleInputChange }) {
                 title={Lookup.LogoTitle}
                 desc={Lookup.LogoTitleDesc} 
             />
-
+            <Suspense fallback={<div className='items-center flex justify-center'><Loader2Icon className='animate-spin text-primary w-10 h-10 mt-5'/></div>}>
+               
             <input 
                 placeholder={Lookup.InputPlaceholder} 
                 className='p-4 border rounded-lg mt-5 w-full'
@@ -31,6 +34,7 @@ function LogoTitle({ onHandleInputChange }) {
                     onHandleInputChange(e.target.value);
                 }}
             />
+            </Suspense>
         </div>
     );
 }
